@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OuJS Dev</title>
+</head>
+<body>
+  <h1 id="ent-elem">Ent</h1>
+  <p class="tree">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, dolores?</p>
+  <p class="tree">Omnis similique porro sequi voluptatum deleniti, alias nobis voluptate cum.</p>
+  <p class="tree">Minima repellat similique quae incidunt sapiente placeat expedita repellendus, nihil!</p>
+  <p class="tree">In rerum nisi quae, voluptatibus eaque distinctio, natus consequuntur eligendi!</p>
+  <p class="tree">Facilis natus magnam labore cum perferendis, aspernatur molestias tempore dicta.</p>
+  <p class="tree">Repudiandae itaque, ratione iste in fuga dolores voluptate aperiam aspernatur.</p>
+  <p class="tree">Libero recusandae accusamus repudiandae voluptas officia incidunt blanditiis, dicta adipisci!</p>
+  <p class="tree">Molestiae nihil id, esse et cum recusandae quia eius nobis!</p>
+  <p class="tree">Laudantium quae magnam ipsa optio unde, dolores deserunt maxime distinctio!</p>
+  <p class="tree">Ipsam autem libero nostrum repellendus pariatur blanditiis voluptate adipisci molestiae.</p>
+  <button id="btn-ajax">Call ajax</button>
+  <button id="btn-ajax-json">JSON ajax</button>
+
+  <br><br>
+  <form action="upd.php" method="post" enctype="multipart/form-data" id="form-ajax-file">
+    <input type="file" id="file-upd">
+    <input type="submit" id="btn-submit" value="Submit">
+  </form>
+  <script src="../../src/Ou.js"></script>
+  <script>
+    var Ou = new __Ou__();
+    var doch1 = Ou.g('#ent-elem');
+    var trees = Ou.gal('.tree');
+    doch1.tcls('foo123');
+    doch1.acls('foo', 'boo', 'cow');
+    doch1.rcls('foo');
+    doch1.aatr('rel', 'header');
+    console.log(doch1.gatr('rel'));
+    console.log(doch1.hatr('rel'));
+    console.log('Has class: ' + doch1.hcls('cow123'))
+    console.log(doch1);
+    console.log(trees);
+
+    var $btn = Ou.g('#btn-ajax');
+    $btn.addEventListener('click', function(e) {
+      Ou.ajax({
+        url: 'remote.html',
+        method: 'POST',
+        success: function (resp) {
+          console.log(resp.responseText);
+          $btn.relm();
+        },
+        data: {
+          hello: 'world',
+          foo: 'boo'
+        }
+      });
+    });
+
+
+    var $jsonbtn = Ou.g('#btn-ajax-json');
+    $jsonbtn.addEventListener('click', function (e) {
+      Ou.ajax({
+        url: 'remote.json',
+        method: 'post',
+        type: 'json',
+        data: {
+          name: 'Kaia'
+        }
+      });
+    });
+
+    var $submitBtn = Ou.g('#btn-submit');
+    var $file = Ou.g('#file-upd');
+    var $form = Ou.g('#form-ajax-file');
+
+    $form.addEventListener('submit', function(e) {
+      var file = Ou.g('#file-upd').files[0];
+      Ou.ajax({
+        url:    'upd.php',
+        method: 'post',
+        type:   'file',
+        file:   file
+      });
+      e.preventDefault();
+    });
+
+    console.log(Ou.supports('XMLHttpRequest'));
+  </script>
+</body>
+</html>
