@@ -1,10 +1,10 @@
 ## About
-OuJs is simple wrapper, extensions and shorthands for Vanilla JS. It uses really short method name to make code quicker. OuJS contains common HTMLElement shorthands and other commonly used funcitons in day-to-dat routine work.
+ŌūJs is simple wrapper, extensions and shorthands for Vanilla JS. It uses really short method name to make code quicker. OuJS contains common HTMLElement shorthands and other commonly used funcitons in day-to-dat routine work.
 ## Install
 <code>npm install oujs</code>
 <code>bower install oujs</code>
 ## Why?
-Today pure JavaScript sometimes also called Vanilla JS. Is pretty powerful enough and you don't need 3rd-party libraries like [jQuery](http://www.jquery.com). Usually 3rd-party libraries are overbloated and fat and people don't use 80% of it's power in everyproject. Today everything can be achieved with pure JavaScript. But native method names and object chains are really long, as the result code is also very long. This is why I deciced to create OuJs.
+Today pure JavaScript sometimes also called Vanilla JS. Is pretty powerful enough and you don't need 3rd-party libraries like [jQuery](http://www.jquery.com). Usually 3rd-party libraries are overbloated and fat and people don't use 80% of it's power in everyproject. Today everything can be achieved with pure JavaScript. But native method names and object chains are really long, as the result code is also very long. This is why I deciced to create ŌūJs.
 ## What is Ōū?
 Ōū (pronounced [ˈʔoːʔuː]) is small Hawaiian bird (Psittirostra psittacea) it is small and beautiful as well as ŌūJS. [Wikipedia](https://en.wikipedia.org/wiki/%CA%BB%C5%8C%CA%BB%C5%AB)
 ## Method naming convention
