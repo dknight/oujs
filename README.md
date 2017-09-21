@@ -1,5 +1,5 @@
 ## About
-ŌūJs is simple wrapper, extensions and shorthands for Vanilla JS. It uses really short method name to make code quicker. OuJS contains common HTMLElement shorthands and other commonly used funcitons in day-to-dat routine work.
+ŌūJs is simple wrapper, extensions and shorthands for Vanilla JS. It uses really short method name to make code quicker. ŌūJS contains common HTMLElement shorthands and other commonly used funcitons in day-to-dat routine work.
 ## Install
 <code>npm install oujs</code>
 <code>bower install oujs</code>
