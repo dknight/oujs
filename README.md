@@ -57,4 +57,4 @@ The idea was to create methods names as short as possible. Methods consist of 2 
 | file | binaryBlob | null |
 | cors | string | false |
 
-(Project's webpage)[http://www.whopp.ee/oujs/]
+[Project's webpage](http://www.whoop.ee/oujs/)
