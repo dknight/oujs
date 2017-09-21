@@ -1,8 +1,5 @@
 ## About
 OuJs is simple wrapper, extensions and shorthands for Vanilla JS. It uses really short method name to make code quicker. OuJS contains common HTMLElement shorthands and other commonly used funcitons in day-to-dat routine work.
-
-(Project's webpage)[http://www.whopp.ee/oujs/]
-
 ## Install
 <code>npm install oujs</code>
 <code>bower install oujs</code>
@@ -25,10 +22,10 @@ The idea was to create methods names as short as possible. Methods consist of 2 
 | elm   | element|
 | al    | all |
 ### Examples
-**gatr** (**g** - stands for get, **atr** for attribute, means short version of getAttribute)
-**gal** (**g** - stands for get, **al** for all, shortening of getAll)
-**tcls** (**t** - toggle, **cls** class = toggleClass)
-**aatr** (**a** - add, **atr** attribute = addAttribute)
+**gatr** (**g** - stands for get, **atr** for attribute, means short version of getAttribute)<br>
+**gal** (**g** - stands for get, **al** for all, shortening of getAll)<br>
+**tcls** (**t** - toggle, **cls** class = toggleClass)<br>
+**aatr** (**a** - add, **atr** attribute = addAttribute)<br>
 ## API
 | method | Vanilla JS equivalent |
 |-------|------|
