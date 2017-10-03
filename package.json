@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "jasmine"
+    "test": "x-www-browser spec/SpecRunner.html"
   },
   "repository": {
     "type": "git",
